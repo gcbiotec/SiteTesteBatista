@@ -1,0 +1,42 @@
+##########################
+## Java
+##########################
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+##########################
+## Gradle
+##########################
+gradlew
+gradlew.bat
+gradle
+.gradle/
+build/
+settings.gradle
+.gradletasknamecache
+
+##########################
+## IntelliJ
+##########################
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+##########################
+## Eclipse
+##########################
+.metadata
+.classpath
+.project
+.settings/
+
+########################## Default ignored files
+/shelf/
+/workspace.xml
