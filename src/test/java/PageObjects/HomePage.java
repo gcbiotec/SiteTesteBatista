@@ -19,4 +19,4 @@ public class HomePage {
     public WebElement getStartButton(){
         return driver.findElement(By.xpath("//div[@class='row col s12']/div[@class='col s6']/div[@id='index-banner']/div/div/a"));
     }
-};
+}
