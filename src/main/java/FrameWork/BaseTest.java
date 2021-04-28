@@ -2,6 +2,7 @@ package FrameWork;
 
 import FrameWork.Browser.DriverManager;
 import FrameWork.Browser.TypeDriver;
+import FrameWork.Report.Report;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -18,10 +19,13 @@ public class BaseTest extends DriverManager {
     }
     @BeforeEach
     public void setUp(){
+        Report.setExtentReport();
         getDriver().get(url);
     }
+
     @AfterEach
     public void tearDown(){
+        Report.endReport();
         quitDriver();
     }
 }
